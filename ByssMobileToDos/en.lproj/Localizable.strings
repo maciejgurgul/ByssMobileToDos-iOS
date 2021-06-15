@@ -4,3 +4,7 @@
 "TodoViewControlerTableViewController.label.AddTask" = "Add new task";
 
 "TodoViewControlerTableViewController.textfield.title" = "Title";
+
+"TodoViewControlerTableViewController.alert.empty" = "You can add empty task!";
+
+"UIViewController.alert.ok" = "OK";

@@ -90,6 +90,18 @@ class TodoViewControler: UIViewController {
             view.leftAnchor.constraint(equalTo: buttonsStackView.leftAnchor, constant: -16),
             view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: buttonsStackView.bottomAnchor, constant: 16)
         ])
+        
+        addTaskButton.addAction { [weak self] in
+            self?.imaginaryButtonActionAddNewToDo()
+        }
+        
+        cancelButton.addAction { [weak self] in
+            self?.resetTextField()
+        }
+    }
+    
+    private func resetTextField() {
+        textField.text = ""
     }
 }
 
@@ -128,7 +140,16 @@ extension TodoViewControler: TodoViewControlerProtocol {
     }
     
     func imaginaryButtonActionAddNewToDo() {
-        //TO DO
+        guard let text = textField.text,
+              !text.isEmpty,
+              text != "" else {
+            showAlert(message: "TodoViewControlerTableViewController.alert.empty".localized)
+            return
+        }
+        
+        tasks.append(Task(id: tasks.uniqueId, title: text, completed: false))
+        resetTextField()
+        tableView.reloadData()
     }
     
     func imaginaryButtonActionRemoveTodo(with id: Int) {
