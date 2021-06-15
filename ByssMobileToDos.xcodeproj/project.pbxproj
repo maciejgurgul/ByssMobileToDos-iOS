@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		77715160267897DF00C56B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771515F267897DF00C56B1B /* AppDelegate.swift */; };
-		77715164267897DF00C56B1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77715163267897DF00C56B1B /* ViewController.swift */; };
 		77715169267897E000C56B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77715168267897E000C56B1B /* Assets.xcassets */; };
 		7771516C267897E000C56B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7771516A267897E000C56B1B /* LaunchScreen.storyboard */; };
 		77715177267897E000C56B1B /* ByssMobileToDosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77715176267897E000C56B1B /* ByssMobileToDosTests.swift */; };
+		779A3E732678A1E10047B702 /* TodoViewControlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E722678A1E10047B702 /* TodoViewControlerProtocol.swift */; };
+		779A3E752678A21F0047B702 /* TodoViewControlerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E742678A21F0047B702 /* TodoViewControlerTableViewController.swift */; };
+		779A3E792678AD180047B702 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E782678AD180047B702 /* PrimaryButton.swift */; };
+		779A3E7C2678ADC80047B702 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E7B2678ADC80047B702 /* SecondaryButton.swift */; };
+		779A3E7F2678B0CD0047B702 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E7E2678B0CD0047B702 /* Divider.swift */; };
+		779A3E842678BAF10047B702 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E832678BAF10047B702 /* String+Localizable.swift */; };
+		779A3E852678BB100047B702 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 779A3E872678BB100047B702 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7771515C267897DF00C56B1B /* ByssMobileToDos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByssMobileToDos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7771515F267897DF00C56B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77715163267897DF00C56B1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77715168267897E000C56B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7771516B267897E000C56B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7771516D267897E000C56B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +47,14 @@
 		77715176267897E000C56B1B /* ByssMobileToDosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByssMobileToDosTests.swift; sourceTree = "<group>"; };
 		77715178267897E000C56B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7771517D267897E000C56B1B /* ByssMobileToDosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ByssMobileToDosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779A3E722678A1E10047B702 /* TodoViewControlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewControlerProtocol.swift; sourceTree = "<group>"; };
+		779A3E742678A21F0047B702 /* TodoViewControlerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewControlerTableViewController.swift; sourceTree = "<group>"; };
+		779A3E782678AD180047B702 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		779A3E7B2678ADC80047B702 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		779A3E7E2678B0CD0047B702 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		779A3E832678BAF10047B702 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		779A3E862678BB100047B702 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		779A3E882678BB2E0047B702 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +104,14 @@
 		7771515E267897DF00C56B1B /* ByssMobileToDos */ = {
 			isa = PBXGroup;
 			children = (
+				779A3E762678ACFB0047B702 /* DesignSystem */,
+				779A3E712678A1AB0047B702 /* TodoViewControler */,
 				7771515F267897DF00C56B1B /* AppDelegate.swift */,
-				77715163267897DF00C56B1B /* ViewController.swift */,
 				77715168267897E000C56B1B /* Assets.xcassets */,
 				7771516A267897E000C56B1B /* LaunchScreen.storyboard */,
 				7771516D267897E000C56B1B /* Info.plist */,
+				779A3E872678BB100047B702 /* Localizable.strings */,
+				779A3E822678BADE0047B702 /* Extensions */,
 			);
 			path = ByssMobileToDos;
 			sourceTree = "<group>";
@@ -107,6 +123,49 @@
 				77715178267897E000C56B1B /* Info.plist */,
 			);
 			path = ByssMobileToDosTests;
+			sourceTree = "<group>";
+		};
+		779A3E712678A1AB0047B702 /* TodoViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				779A3E722678A1E10047B702 /* TodoViewControlerProtocol.swift */,
+				779A3E742678A21F0047B702 /* TodoViewControlerTableViewController.swift */,
+			);
+			path = TodoViewControler;
+			sourceTree = "<group>";
+		};
+		779A3E762678ACFB0047B702 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				779A3E7D2678B0BF0047B702 /* Views */,
+				779A3E772678AD060047B702 /* Buttons */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		779A3E772678AD060047B702 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				779A3E782678AD180047B702 /* PrimaryButton.swift */,
+				779A3E7B2678ADC80047B702 /* SecondaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		779A3E7D2678B0BF0047B702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				779A3E7E2678B0CD0047B702 /* Divider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		779A3E822678BADE0047B702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				779A3E832678BAF10047B702 /* String+Localizable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +253,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 77715153267897DF00C56B1B;
 			productRefGroup = 7771515D267897DF00C56B1B /* Products */;
@@ -213,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7771516C267897E000C56B1B /* LaunchScreen.storyboard in Resources */,
+				779A3E852678BB100047B702 /* Localizable.strings in Resources */,
 				77715169267897E000C56B1B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,8 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77715164267897DF00C56B1B /* ViewController.swift in Sources */,
+				779A3E7C2678ADC80047B702 /* SecondaryButton.swift in Sources */,
 				77715160267897DF00C56B1B /* AppDelegate.swift in Sources */,
+				779A3E752678A21F0047B702 /* TodoViewControlerTableViewController.swift in Sources */,
+				779A3E7F2678B0CD0047B702 /* Divider.swift in Sources */,
+				779A3E792678AD180047B702 /* PrimaryButton.swift in Sources */,
+				779A3E732678A1E10047B702 /* TodoViewControlerProtocol.swift in Sources */,
+				779A3E842678BAF10047B702 /* String+Localizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +348,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		779A3E872678BB100047B702 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779A3E862678BB100047B702 /* en */,
+				779A3E882678BB2E0047B702 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -289,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -350,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController =  ViewController()
+        window?.rootViewController = TodoViewControler()
         window?.makeKeyAndVisible()
     }
 }
