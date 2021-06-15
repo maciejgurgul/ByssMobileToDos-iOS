@@ -1,2 +1,6 @@
 "TodoViewControlerTableViewController.button.add" = "DODAJ";
 "TodoViewControlerTableViewController.button.cancel" = "ANULUJ";
+
+"TodoViewControlerTableViewController.label.AddTask" = "Dodaj nowe zadanie";
+
+"TodoViewControlerTableViewController.textfield.title" = "Tytuł";
