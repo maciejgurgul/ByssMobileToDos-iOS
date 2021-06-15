@@ -54,13 +54,11 @@ class TodoViewControler: UIViewController {
         return label
     }()
     
-    private var tasks: [Task] = []
+    private lazy var tasks: [Task] = DataFetch.initData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        tasks = DataFetch.initData()
-        tableView.reloadData()
     }
     
     private func setupView() {
@@ -109,7 +107,11 @@ extension TodoViewControler: UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        tasks.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
 }
 
 extension TodoViewControler: UITableViewDelegate {

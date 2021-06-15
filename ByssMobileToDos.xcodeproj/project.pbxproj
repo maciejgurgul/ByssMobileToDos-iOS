@@ -22,6 +22,7 @@
 		779A3E8F2678C6C50047B702 /* UIView+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E8E2678C6C50047B702 /* UIView+AddAction.swift */; };
 		779A3E912678CA200047B702 /* DataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E902678CA200047B702 /* DataFetch.swift */; };
 		779A3E932678CA4A0047B702 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E922678CA4A0047B702 /* Task.swift */; };
+		779A3E952678D38C0047B702 /* Array+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A3E942678D38C0047B702 /* Array+Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		779A3E8E2678C6C50047B702 /* UIView+AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddAction.swift"; sourceTree = "<group>"; };
 		779A3E902678CA200047B702 /* DataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetch.swift; sourceTree = "<group>"; };
 		779A3E922678CA4A0047B702 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		779A3E942678D38C0047B702 /* Array+Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Object.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				779A3E832678BAF10047B702 /* String+Localizable.swift */,
 				779A3E8E2678C6C50047B702 /* UIView+AddAction.swift */,
+				779A3E942678D38C0047B702 /* Array+Object.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				779A3E7C2678ADC80047B702 /* SecondaryButton.swift in Sources */,
 				779A3E8B2678C1330047B702 /* TaskViewCell.swift in Sources */,
+				779A3E952678D38C0047B702 /* Array+Object.swift in Sources */,
 				77715160267897DF00C56B1B /* AppDelegate.swift in Sources */,
 				779A3E752678A21F0047B702 /* TodoViewControlerTableViewController.swift in Sources */,
 				779A3E932678CA4A0047B702 /* Task.swift in Sources */,

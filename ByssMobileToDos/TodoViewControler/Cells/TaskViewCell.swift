@@ -3,15 +3,14 @@ import UIKit
 class TaskViewCell: UITableViewCell {
 
     private let checkbutton = CheckButton()
-    
+        
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
     }()
-    
-    
+        
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
             setupView()
@@ -26,7 +25,6 @@ class TaskViewCell: UITableViewCell {
             contentView.addSubview(titleLabel)
             
             NSLayoutConstraint.activate([
-                
                 checkbutton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16),
                 checkbutton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
                 
@@ -35,16 +33,16 @@ class TaskViewCell: UITableViewCell {
                 titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24),
                 titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
             ])
-            
-            
-            checkbutton.addAction { [weak self] in
-                guard let selected = self?.checkbutton.isSelected else { return }
-                self?.checkbutton.isSelected = !selected
-            }
         }
     
     public func setup(task: Task) {
         checkbutton.isSelected = task.completed
         titleLabel.text = task.title
+        
+        checkbutton.addAction { [weak self] in
+            guard let selected = self?.checkbutton.isSelected else { return }
+            self?.checkbutton.isSelected = !selected
+            task.completed = !selected
+        }
     }
 }

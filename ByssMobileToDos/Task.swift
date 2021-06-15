@@ -1,9 +1,14 @@
 import UIKit
 
-struct Task {
+class Task {
 
     let id: Int
     let title: String
-    let completed: Bool
+    var completed: Bool
 
+    init(id: Int, title: String, completed: Bool) {
+        self.id = id
+        self.title = title
+        self.completed = completed
+    }
 }
